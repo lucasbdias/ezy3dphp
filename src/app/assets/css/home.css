@@ -1,0 +1,42 @@
+.slides {
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide1 {
+  background-image: url(../img/home/slide1.jpg);
+}
+
+#slide2 {
+  background-image: url(../img/home/slide2.jpg);
+}
+
+#slide3 {
+  background-image: url(../img/home/slide3.jpg);
+}
+
+.carousel-caption {
+  top: 25vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#cards-principais {
+  position: relative;
+  top: -70px;
+}
+
+#container-impressoras3d h1 {
+  border-bottom: solid 2px orange;
+}
+#container-acessorios h1 {
+  border-bottom: solid 2px orange;
+}
+
+.bg-orange {
+  background-color: #ffa500;
+}

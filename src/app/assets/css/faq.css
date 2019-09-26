@@ -1,0 +1,53 @@
+#fundo-menu {
+  width: 100%;
+  height: 76px;
+  background-color: #232323;
+}
+main #container {
+  min-height: 40vh;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.problem {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: orange !important;
+  border-color: orange !important;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.gira {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.txt-problem {
+  color: red;
+}
+
+.problem {
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
