@@ -78,17 +78,20 @@ foreach ($langRodape as $item) {
         </ul>
         <div class="my-lg-0 pr-lg-5">
             <ul class="navbar-nav mr-auto">
-                <li class="mx-4 py-4">
+                <li class="py-4">
                     <a class="p-3" id="btn-faq" href="faq.php">FAQ</a>
                 </li>
-                <li class="py-4">
-                    <span id="btn-language">Idioma <i class="fas fa-sort-down"></i></span>
+                <li class="py-4 mx-4">
+                    <a href="#">Entrar</a>
                 </li>
+                <!-- <li class="py-4">
+                    <span id="btn-language">Idioma <i class="fas fa-sort-down"></i></span>
+                </li> -->
 
                 <?php if(isset($_SESSION["god"])){?>
                 <li class="nav-item dropdown py-3 ml-4">
-                    <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle btn btn-danger" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Modo Admin
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -105,19 +108,13 @@ foreach ($langRodape as $item) {
     <div class="menu-containers py-30px" id="container-printer">
         <div class="px-5">
             <div class="row">
-                <div class="col-4 text-center">
+                <div class="col-6 text-center">
                     <a class="zoomMenuPrinter" href="impressora3d_e1260t.php">
                         <img src="src/app/assets/img/includes/menu/e1260tmenu.png" style="max-height: 250px;">
                     </a>
                     <a class="link-printer mt-2" href="impressora3d_e1260t.php">E1260T</a>
                 </div>
-                <div class="col-4 text-center">
-                    <a class="zoomMenuPrinter" href="impressora3d_phylos.php">
-                        <img src="src/app/assets/img/includes/menu/phylosmenu.png" style="max-height: 250px;">
-                    </a>
-                    <a class="link-printer mt-2" href="impressora3d_phylos.php">Phylos</a>
-                </div>
-                <div class="col-4 text-center">
+                <div class="col-6 text-center">
                     <a class="zoomMenuPrinter" href="impressora3d_coree3.php">
                         <img src="src/app/assets/img/includes/menu/coree3menu.png" style="max-height: 250px;">
                     </a>
@@ -257,8 +254,6 @@ foreach ($langRodape as $item) {
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item w-100" href="impressora3d_e1260t.php">E1260T</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="impressora3d_phylos.php">Phylos</a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="impressora3d_coree3.php">Core E3</a>
                 </div>
             </li>
@@ -288,6 +283,7 @@ foreach ($langRodape as $item) {
             <li class="nav-item">
                 <a class="nav-link" href="contato.php">Contato</a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="faq.php">FAQ</a>
             </li>

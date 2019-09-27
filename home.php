@@ -187,30 +187,6 @@
                                 alt="Imagem de capa do card">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <?= $produto2 ?>
-                                    <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
-                         "<a href='src/commands/listarTexto.php?apelido=produto2&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
-                                </h4>
-                                <p class="card-text">
-                                    <?= $descproduto2 ?>
-                                    <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
-                         "<a href='src/commands/listarTexto.php?apelido=descproduto2&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
-                                </p>
-                                <a href="impressora3d_e1260t.php" class="btn-ezy1">
-                                    <?= $btnproduto2 ?>
-                                    <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
-                         "<a href='src/commands/listarTexto.php?apelido=btnproduto2&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 my-2">
-                        <div class="card">
-                            <img class="card-img-top" src="https://static.pingendo.com/img-placeholder-1.svg"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h4 class="card-title">
                                     <?= $produto3 ?>
                                     <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
                          "<a href='src/commands/listarTexto.php?apelido=produto3&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
