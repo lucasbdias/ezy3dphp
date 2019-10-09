@@ -81,9 +81,36 @@ foreach ($langRodape as $item) {
                 <li class="py-4">
                     <a class="p-3" id="btn-faq" href="faq.php">FAQ</a>
                 </li>
+
+                <?php 
+                    if(isset($_SESSION["cliente"])){?>
+                <div class="dropdown py-4 mx-4">
+                    <span id="btn-portal-cliente" class="dropdown-toggle" data-toggle="dropdown">
+                        <?= $_SESSION["cliente"]["nome"] ?>
+                        <span class="caret"></span>
+                    </span>
+                    <ul id="dropdown-cliente" class="dropdown-menu">
+                        <li><a href="portalcliente.php" class="option-cliente">Perfil</a></li>
+                        <hr>
+                        <li><a href="src/commands/logout.php?pag=<?=$pagina?>" class="option-cliente">Sair</a></li>
+                    </ul>
+                </div>
+                <?php } else{?>
                 <li class="py-4 mx-4">
-                    <a href="#">Entrar</a>
+                    <span id="btn-portal-cliente">Portal do cliente</span>
                 </li>
+                <div id="login-cliente">
+                    <div id="seta-login"></div>
+                    <form action="src/app/controllers/clienteController.php" method="post">
+                        <input type="hidden" name="tipo" value="login">
+                        <input type="email" name="email" placeholder="E-mail" required><br>
+                        <input type="password" name="senha" placeholder="Senha" required><br>
+
+                        <button id="btn-entrar" type="submit" class="mt-3">Entrar</button><br>
+                        <button id="btn-cadastrar" type="button" class="mt-1">Cadastre-se</button>
+                    </form>
+                </div>
+                <?php } ?>
                 <!-- <li class="py-4">
                     <span id="btn-language">Idioma <i class="fas fa-sort-down"></i></span>
                 </li> -->

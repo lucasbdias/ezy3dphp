@@ -1,3 +1,8 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .slides {
   height: 100vh;
   position: relative;
@@ -33,6 +38,7 @@
 #container-impressoras3d h1 {
   border-bottom: solid 2px orange;
 }
+
 #container-acessorios h1 {
   border-bottom: solid 2px orange;
 }

@@ -1,0 +1,82 @@
+main {
+    margin-top: 58px;
+    margin-left: 250px;
+    background-color: #eee;
+    flex-direction: column;
+    flex: 1;
+}
+
+#container {
+    min-height: 95vh;
+}
+
+@media (max-width: 991px) {
+    main {
+        margin-left: 0%;
+    }
+}
+
+#now {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
+}
+
+/* #tickets {} */
+
+.tickets {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #0001;
+}
+
+.state-ticket {
+    font-size: 50px;
+}
+
+.state-num-ticket {
+    float: right;
+    font-size: 30px;
+}
+
+/* #panel {} */
+
+#panel #panel-top {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #0001;
+}
+
+/* #panel #main {} */
+
+.ticket-pendente {
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #0001;
+    border-bottom: solid 1px #0001;
+}
+
+.ticket-pendente:hover {
+    background-color: #f8f8f8;
+}
+
+/* .num-ticket {} */
+
+.call-ticket {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.call-ticket:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.responder-ticket:hover {
+    color: #00f;
+}
+
+.excluir-ticket:hover {
+    color: #f00;
+}

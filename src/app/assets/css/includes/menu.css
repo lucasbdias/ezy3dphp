@@ -12,16 +12,19 @@ html {
     max-width: 540px !important;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px !important;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px !important;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80% !important;
@@ -33,11 +36,13 @@ html {
     font-size: 15px;
   }
 }
+
 @media only screen and (max-width: 991px) {
   html {
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 13px;
@@ -47,6 +52,7 @@ html {
 main {
   background-color: #fff;
 }
+
 .main-opacity {
   opacity: 0.5;
 }
@@ -64,6 +70,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
   transition: 0.3s;
 }
+
 .location-link:hover {
   color: #ffa500;
   transition: 0.3s;
@@ -116,15 +123,19 @@ nav {
   nav {
     display: none !important;
   }
+
   nav * {
     display: none !important;
   }
+
   #panel {
     display: none !important;
   }
+
   .menu-containers {
     display: none !important;
   }
+
   #container-language {
     display: none !important;
   }
@@ -153,6 +164,7 @@ nav ul li a:hover {
 .color-000 {
   color: #000 !important;
 }
+
 .color-000-scroll {
   color: #000 !important;
 }
@@ -168,6 +180,7 @@ nav .options-menu li {
 .border-color-ffa500 {
   border-color: #ffa500 !important;
 }
+
 .border-color-fff {
   border-color: #fff;
 }
@@ -240,6 +253,7 @@ nav .options-menu li {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
+
 .itens-accessory li:hover {
   background-color: rgba(242, 137, 24, 0.3);
   color: #db580b;
@@ -280,6 +294,7 @@ nav .options-menu li {
   border-radius: 20px;
   transition: 0.2s;
 }
+
 .itens-application li:hover {
   background-color: rgba(242, 137, 24, 0.3);
   color: #db580b;
@@ -289,12 +304,14 @@ nav .options-menu li {
 .fotosApplication {
   display: none;
 }
+
 /* -------------
  */
 #btn-language {
   cursor: pointer;
   color: #fff;
 }
+
 #btn-faq {
   cursor: pointer;
   color: #ffa500;
@@ -333,8 +350,80 @@ nav .options-menu li {
 .zoomMenuPrinter img {
   transition: 0.3s;
 }
+
 .zoomMenuPrinter:hover img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   transition: 0.3s;
+}
+
+#btn-portal-cliente {
+  color: #fff;
+  cursor: pointer;
+}
+
+#login-cliente {
+  padding: 40px 15px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 2px 2px 4px #0003;
+  top: 80px;
+  display: none;
+}
+
+#seta-login {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+  top: -15px;
+  left: 100px;
+  transform: rotate(45deg);
+}
+
+#login-cliente input {
+  margin-bottom: 10px;
+  height: 40px;
+  font-size: 16px;
+  padding: 7px;
+}
+
+#login-cliente button {
+  width: 100%;
+  cursor: pointer;
+  height: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+
+#login-cliente button#btn-entrar {
+  background-color: #ffa500;
+  transition: 0.2s;
+}
+
+#login-cliente button#btn-entrar:hover {
+  background-color: #db580b;
+  transition: 0.2s;
+}
+
+#login-cliente button#btn-cadastrar {
+  background-color: #7e7e7e;
+  transition: 0.2s;
+}
+
+#login-cliente button#btn-cadastrar:hover {
+  background-color: #353535;
+  transition: 0.2s;
+}
+
+.option-cliente {
+  color: #333;
+  padding: 15px;
+}
+
+.option-cliente:hover {
+  color: #666;
 }

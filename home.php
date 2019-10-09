@@ -64,24 +64,6 @@
                          "<a href='src/commands/listarTexto.php?apelido=btnslide2&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div id="slide3" class="slides"></div>
-                <div class="carousel-caption">
-                    <h1>
-                        <?= $titulo_slide3 ?>
-                        <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ? 
-                        "<a href='src/commands/listarTexto.php?apelido=titulo_slide1&pag=$pagina'><i class='fas fa-edit'></i></a>" : '' ?>
-                    </h1>
-                    <p>
-                        <?= $slide3 ?>
-                        <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
-                         "<a href='src/commands/listarTexto.php?apelido=slide1&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
-                    </p>
-                    <button class="btn-ezy2"><?= $btnslide3 ?></button>
-                    <?php echo (isset($_SESSION["god"]) && $_SESSION["god"] === 'accessgod') ?
-                         "<a href='src/commands/listarTexto.php?apelido=btnslide3&pag=$pagina'><i class='fas fa-edit'></i></a></a>" : '' ?>
-                </div>
-            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

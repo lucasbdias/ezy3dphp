@@ -6,9 +6,11 @@ $(document).ready(function() {
       $("nav").addClass("background-color-menu-scroll");
       $(".btn-option").addClass("color-000-scroll");
       $("#btn-language").addClass("color-000-scroll");
+      $("#btn-portal-cliente").addClass("color-000-scroll");
     } else {
       $(".btn-option").removeClass("color-000-scroll");
       $("#btn-language").removeClass("color-000-scroll");
+      $("#btn-portal-cliente").removeClass("color-000-scroll");
       $("nav").removeClass("background-color-menu-scroll");
     }
   });
@@ -19,6 +21,7 @@ $(document).ready(function() {
 
     $(".btn-option").addClass("color-000");
     $("#btn-language").addClass("color-000");
+    $("#btn-portal-cliente").addClass("color-000-scroll");
     $(`#li-${atual}`).addClass("border-color-ffa500");
     $("nav").addClass("background-color-menu");
     $("main").addClass("main-opacity");
@@ -61,6 +64,7 @@ $(document).ready(function() {
       $(`#li-${eachAtual}`).removeClass("border-color-ffa500");
       $("nav").removeClass("background-color-menu");
       $("main").removeClass("main-opacity");
+      $("#btn-portal-cliente").removeClass("color-000-scroll");
       $(`#container-${eachAtual}`)
         .stop()
         .fadeOut("fast");
@@ -80,6 +84,7 @@ $(document).ready(function() {
       $(`#li-${eachAtual}`).removeClass("border-color-ffa500");
       $("nav").removeClass("background-color-menu");
       $("main").removeClass("main-opacity");
+      $("#btn-portal-cliente").removeClass("color-000-scroll");
       $(`#container-${eachAtual}`)
         .stop()
         .fadeOut("fast");
@@ -107,6 +112,7 @@ $(document).ready(function() {
       $(`#li-${eachAtual}`).removeClass("border-color-ffa500");
       $("nav").removeClass("background-color-menu");
       $("main").removeClass("main-opacity");
+      $("#btn-portal-cliente").removeClass("color-000-scroll");
       $(`#container-${eachAtual}`)
         .stop()
         .fadeOut("fast");
@@ -114,6 +120,14 @@ $(document).ready(function() {
         .stop()
         .fadeOut("fast");
     });
+  });
+
+  $("#btn-portal-cliente").hover(function() {
+    $("#login-cliente").show();
+  });
+
+  $("main").hover(function() {
+    $("#login-cliente").hide();
   });
 
   // ACCESSORY

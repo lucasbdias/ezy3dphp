@@ -1,0 +1,51 @@
+#panel-cliente {
+    border: solid 1px #0002;
+}
+
+#menu-cliente {
+    border-right: solid 1px #0002;
+}
+
+#menu-cliente ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.option-menu-cliente {
+    padding: 20px 20px 20px 60px;
+    cursor: pointer;
+    border-left: 4px solid #fff;
+}
+
+.option-menu-cliente {
+    padding: 20px 20px 20px 60px;
+    cursor: pointer;
+    border-left: 4px solid #fff;
+}
+
+.option-menu-cliente:hover {
+    background-color: #0001;
+    border-left: 4px solid #0003 !important;
+}
+
+.--menu-cliente-border-on {
+    border-left: 4px solid #000 !important;
+}
+
+.--menu-cliente-border-on:hover {
+    border-left: 4px solid #000 !important;
+    background-color: #fff !important;
+    border-left: 4px solid #000 !important;
+}
+
+.--menu-cliente-border-off {
+    border-left: 4px solid #fff !important;
+}
+
+#alterar_panel-cliente {
+    display: none;
+}
+
+#editar_panel-cliente {
+    display: none;
+}

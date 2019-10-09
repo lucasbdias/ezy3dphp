@@ -9,11 +9,11 @@ class Conexao {
 	public function __construct() {
 		$this->usuario = "gabzendine";
 		$this->senha = "senha";
-		$this->bd = "ezy3d";
+		$this->bd = "dbezy3d";
 		$this->servidor = "localhost";
 	}
-
-	public function conectar() {
+	
+public function conectar() {
 		$this->conexao = new PDO(
 			"mysql:host=$this->servidor;dbname=$this->bd",
 			$this->usuario,

@@ -1,0 +1,28 @@
+main {
+    margin-top: 58px;
+    margin-left: 250px;
+    background-color: #eee;
+    flex-direction: column;
+    flex: 1;
+}
+
+#container {
+    min-height: 95vh;
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    main {
+        margin-left: 0%;
+    }
+}
+
+#resposta {
+    padding: 25px;
+}
+
+#ticket {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #0001;
+}
